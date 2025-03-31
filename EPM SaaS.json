@@ -4,36 +4,6 @@
   "items": [
     {
       "type": "http",
-      "name": "Add app to app group",
-      "seq": 7,
-      "request": {
-        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/ApplicationGroups/{{APP_GROUP_ID}}",
-        "method": "PUT",
-        "headers": [
-          {
-            "name": "Authorization",
-            "value": "basic {{TOKEN}}",
-            "enabled": true
-          }
-        ],
-        "params": [],
-        "body": {
-          "mode": "json",
-          "json": "{\n  \"Applications\": [\n    {\n      \"id\": \"b16a73a3-bf2f-4c8f-a8b5-4015343884f0\",\n      \"internalId\": 0,\n      \"internalIndex\": 0,\n      \"applicationType\": 24,\n      \"displayName\": \"powershell.exe\",\n      \"description\": \"\",\n      \"patterns\": {\n        \"FILE_NAME\": {\n          \"@type\": \"FileName\",\n          \"content\": \"word\",\n          \"compareAs\": 0,\n          \"caseSensitive\": true,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": false,\n          \"hashAlgorithm\": \"\",\n          \"hash\": \"\",\n          \"fileSize\": 0\n        },\n        \"ARGUMENTS\": {\n          \"@type\": \"Text\",\n          \"content\": \"\",\n          \"compareAs\": 0,\n          \"caseSensitive\": true,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": true\n        },\n        \"LOCATION\": {\n          \"@type\": \"Location\",\n          \"content\": \"\",\n          \"withSubfolders\": true,\n          \"caseSensitive\": true,\n          \"isEmpty\": true\n        },\n        \"PUBLISHER\": {\n          \"@type\": \"Publisher\",\n          \"content\": \"\",\n          \"compareAs\": 0,\n          \"caseSensitive\": false,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": true,\n          \"signatureLevel\": 1,\n          \"separator\": \";\"\n        },\n        \"BUNDLE_ID\": {\n          \"@type\": \"Text\",\n          \"content\": \"\",\n          \"compareAs\": 3,\n          \"caseSensitive\": false,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": true\n        },\n        \"BUNDLE_VERSION\": {\n          \"@type\": \"VersionRange\",\n          \"minVersion\": \"\",\n          \"maxVersion\": \"\",\n          \"isEmpty\": true\n        }\n      },\n      \"applicationGroupId\": \"9b2d938c-3223-4b5e-92df-4d4a0adfbca2\",\n      \"internalApplicationGroupId\": 0,\n      \"includeInMatching\": true,\n      \"softwareDistributorName\": null,\n      \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n      \"childProcess\": false,\n      \"LinuxChildProcess\": 2,\n      \"restrictOpenSaveFileDialog\": false,\n      \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n      \"protectInstalledFiles\": false,\n      \"securityLevel\": \"LOW\"\n    }\n  ],\n  \"PolicyType\": 16,\n  \"Name\": \"ApplicationGroupMacOS1\",\n  \"Description\": \"Application Group Description \"\n}",
-          "formUrlEncoded": [],
-          "multipartForm": []
-        },
-        "script": {},
-        "vars": {},
-        "assertions": [],
-        "tests": "",
-        "auth": {
-          "mode": "none"
-        }
-      }
-    },
-    {
-      "type": "http",
       "name": "Authenticate",
       "seq": 2,
       "request": {
