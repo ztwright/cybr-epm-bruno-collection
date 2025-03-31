@@ -8,18 +8,17 @@ Instructions for Bruno client REST testing framework
 
 2.  Select Configure.
 
-3.  Add variables for the following:
-  - EPM_SERVER
-  - EPM_LOGIN
-  - VERSION
-  - SET_ID
-  - USERNAME
-  - PASSWORD
-  - TOKEN
-  - APP_GROUP_ID
+3. Add variables for the following:
+   1. EPM_SERVER
+   2. EPM_LOGIN
+   3. VERSION
+   4. SET_ID
+   5. USERNAME
+   6. PASSWORD
+   7. TOKEN
+   8. APP_GROUP_ID
 
-<image>src=img/env-vars.png</image>
-
+![Screenshot of some helpful inline comments for pointers on how to define the environment variables.](img/env-vars.png)
 ## Notes 
 
 1. You will not have a token at first.  You will get the token in the response data from the initial ``POST Authenticate/`` request.  Copy that into the value of the environment variable that you created.
