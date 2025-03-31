@@ -234,10 +234,10 @@
   "activeEnvironmentUid": "czVs9YCPj67D3OEk5jz8g",
   "environments": [
     {
-      "variables": [
+      "variables": [ß
         {
           "name": "EPM_SERVER",
-          "value": "https://<subdomain>.epm.cyberark.com", // For example, ab123.epm.cyberark.com
+          "value": "https://<subdomain>.epm.cyberark.com",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -251,7 +251,7 @@
         },
         {
           "name": "VERSION",
-          "value": "25.3.1.4604", // You can get version info from EPM set view > {{ your username }} > EPM Version
+          "value": "25.3.1.4604",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -272,7 +272,7 @@
         },
         {
           "name": "APP_GROUP_ID",
-          "value": "", // App group ID (example syntax: abc12345f-1111-2222-3333-aaaabbbbaaaa)
+          "value": "",
           "enabled": true,
           "secret": false,
           "type": "text"
