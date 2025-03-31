@@ -49,7 +49,7 @@ git clone https://github.com/ztwright/cybr-epm-bruno-collection.git
    8. APP_GROUP_ID
 
 ![Screenshot of some helpful inline comments for pointers on how to define the environment variables.](img/env-vars.png)
-## Notes 
+## Usage Notes 
 
 1. You will not have a token at first.  You will get the token in the response data from the initial ``POST Authenticate/`` request.  Copy that into the value of the environment variable that you created.
 2. ``USERNAME`` and ``PASSWORD`` can be passed in as they would normally be entered signing in through the native login (``user@domain/password``).
