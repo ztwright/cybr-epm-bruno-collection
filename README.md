@@ -2,11 +2,41 @@
 
 ## Instructions for usage
 
-Instructions for Bruno client REST testing framework
+*NOTE*: Make sure you have git installed OR [Download the Zip](https://github.com/ztwright/cybr-epm-bruno-collection/archive/refs/heads/master.zip); Skip step 1 in [Importing collection to Bruno](#importing-collection-to-bruno) instead.
+
+### Importing collection to Bruno
+
+1. Open interactive terminal and make a directory or change to your github repositories location.
+
+```shell
+cd your/home/dir/
+mkdir github
+cd github/
+git clone https://github.com/ztwright/cybr-epm-bruno-collection.git
+```
+2. Launch Bruno or equivalent API client
+
+3. Click on the elipsis in the top-left portion of the screen.
+
+![Screenshot of elipsis in Bruno-Client](img/bruno-elipsis.png)
+
+4. Click **Import Collection**.
+
+![Screenshot of Import Collection in Bruno-Client](img/bruno-import-collection.png)
+
+5. Select Bruno Collection type and the 'EPM SaaS.json' file.
+
+![Screenshot of Select Client submenu in Bruno-Client](img/bruno-select-client.png)
+
+6. Select a location in your user namespace (i.e., path/to/REST/CyberArk/EPM) by choosing **Browse**.
+
+7. Once finalized, select **Import**.
+
+### Creating a new Environment Variable configuration
 
 1.  Create a new environment; Click anywhere in the collection -> Collection Environments in the top-right of the window.
 
-2.  Select Configure.
+2.  Select **Configur**e**.
 
 3. Add variables for the following:
    1. EPM_SERVER
