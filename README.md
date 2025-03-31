@@ -18,7 +18,9 @@ Instructions for Bruno client REST testing framework
   - TOKEN
   - APP_GROUP_ID
 
+<html>
 <image>src=img/env-vars.png</image>
+</html>
 
 ## Notes 
 
