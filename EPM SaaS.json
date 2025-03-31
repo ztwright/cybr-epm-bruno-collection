@@ -234,7 +234,7 @@
   "activeEnvironmentUid": "czVs9YCPj67D3OEk5jz8g",
   "environments": [
     {
-      "variables": [ß
+      "variables": [
         {
           "name": "EPM_SERVER",
           "value": "https://<subdomain>.epm.cyberark.com",
