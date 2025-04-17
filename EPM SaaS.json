@@ -1,0 +1,277 @@
+{
+  "name": "EPM SaaS",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "Authenticate",
+      "seq": 2,
+      "request": {
+        "url": "{{EPM_LOGIN}}/EPM/API/{{VERSION}}/Auth/EPM/Logon",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"Username\": \"{{USERNAME}}\",\n  \"Password\": \"{{PASSWORD}}\",\n  \"ApplicationID\": \"bruno\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get aggregated elevation requests",
+      "seq": 5,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/events/aggregations/search",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"filter\": \"eventType IN ElevationRequest\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get application group",
+      "seq": 6,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/ApplicationGroups/Search?limit=100&offset=0&sortBy=PolicyName&sortDir=desc",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "limit",
+            "value": "100",
+            "type": "query",
+            "enabled": true
+          },
+          {
+            "name": "offset",
+            "value": "0",
+            "type": "query",
+            "enabled": true
+          },
+          {
+            "name": "sortBy",
+            "value": "PolicyName",
+            "type": "query",
+            "enabled": true
+          },
+          {
+            "name": "sortDir",
+            "value": "desc",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get policies",
+      "seq": 4,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/Server/Search?limit=100&offset=0&sortBy=PolicyName&sortDir=desc",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          },
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [
+          {
+            "name": "limit",
+            "value": "100",
+            "type": "query",
+            "enabled": true
+          },
+          {
+            "name": "offset",
+            "value": "0",
+            "type": "query",
+            "enabled": true
+          },
+          {
+            "name": "sortBy",
+            "value": "PolicyName",
+            "type": "query",
+            "enabled": true
+          },
+          {
+            "name": "sortDir",
+            "value": "desc",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"filter\": \"PolicyType EQ ADV_WIN\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get sets",
+      "seq": 3,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n\"filter\": \"\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    }
+  ],
+  "activeEnvironmentUid": "",
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "EPM_SERVER",
+          "value": "https://<subdomain>.epm.cyberark.com",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "EPM_LOGIN",
+          "value": "https://login.epm.cyberark.com",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "VERSION",
+          "value": "25.3.1.4604",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "SET_ID",
+          "value": "",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "USERNAME",
+          "value": "john.doe@cyberark.cloud",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "APP_GROUP_ID",
+          "value": "",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "TOKEN",
+          "value": "",
+          "enabled": true,
+          "secret": true,
+          "type": "text"
+        },
+        {
+          "name": "PASSWORD",
+          "value": "",
+          "enabled": true,
+          "secret": true,
+          "type": "text"
+        }
+      ],
+      "name": "CyberArk"
+    }
+  ],
+  "brunoConfig": {
+    "version": "1",
+    "name": "EPM SaaS",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
