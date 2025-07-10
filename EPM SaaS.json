@@ -267,7 +267,7 @@
       "variables": [
         {
           "name": "EPM_SERVER",
-          "value": "https://na123456.epm.cyberark.com",
+          "value": "",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -295,21 +295,21 @@
         },
         {
           "name": "USERNAME",
-          "value": "",
+          "value": "zach.trulby-wright@cyberark.com",
           "enabled": true,
           "secret": false,
           "type": "text"
         },
         {
           "name": "APP_GROUP_ID",
-          "value": "",
+          "value": "6841b932-0322-48d5-864c-8d84ad0f278e",
           "enabled": true,
           "secret": false,
           "type": "text"
         },
         {
           "name": "POLICY_ID",
-          "value": "",
+          "value": "6841b932-0322-48d5-864c-8d84ad0f278e",
           "enabled": true,
           "secret": false,
           "type": "text"
