@@ -261,7 +261,6 @@
       }
     }
   ],
-  "activeEnvironmentUid": "",
   "environments": [
     {
       "variables": [
@@ -288,28 +287,28 @@
         },
         {
           "name": "SET_ID",
-          "value": "312f761e-2451-40eb-8768-8f95444060c5",
+          "value": "",
           "enabled": true,
           "secret": false,
           "type": "text"
         },
         {
           "name": "USERNAME",
-          "value": "zach.trulby-wright@cyberark.com",
+          "value": "",
           "enabled": true,
           "secret": false,
           "type": "text"
         },
         {
           "name": "APP_GROUP_ID",
-          "value": "6841b932-0322-48d5-864c-8d84ad0f278e",
+          "value": "",
           "enabled": true,
           "secret": false,
           "type": "text"
         },
         {
           "name": "POLICY_ID",
-          "value": "6841b932-0322-48d5-864c-8d84ad0f278e",
+          "value": "",
           "enabled": true,
           "secret": false,
           "type": "text"
