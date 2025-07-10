@@ -267,7 +267,7 @@
       "variables": [
         {
           "name": "EPM_SERVER",
-          "value": "https://{{SUBDOMAIN}}.epm.cyberark.com",
+          "value": "https://na123456.epm.cyberark.com",
           "enabled": true,
           "secret": false,
           "type": "text"
