@@ -4,6 +4,36 @@
   "items": [
     {
       "type": "http",
+      "name": "Add app to app group",
+      "seq": 7,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/ApplicationGroups/{{APP_GROUP_ID}}",
+        "method": "PUT",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"Applications\": [\n    {\n      \"id\": \"00000000-0000-0000-0000-000000000001\",\n      \"internalId\": 0,\n      \"internalIndex\": 0,\n      \"applicationType\": 3,\n      \"displayName\": \"acrobat.exe\",\n      \"description\": \"\",\n      \"patterns\": {\n        \"FILE_NAME\": {\n          \"@type\": \"FileName\",\n          \"content\": \"acrobat.exe\",\n          \"compareAs\": 0,\n          \"caseSensitive\": true,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": false,\n          \"hashAlgorithm\": \"\",\n          \"hash\": \"\",\n          \"fileSize\": 0\n        },\n        \"ARGUMENTS\": {\n          \"@type\": \"Text\",\n          \"content\": \"\",\n          \"compareAs\": 0,\n          \"caseSensitive\": true,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": true\n        },\n        \"LOCATION\": {\n          \"@type\": \"Location\",\n          \"content\": \"\",\n          \"withSubfolders\": true,\n          \"caseSensitive\": true,\n          \"isEmpty\": true\n        },\n        \"PUBLISHER\": {\n          \"@type\": \"Publisher\",\n          \"content\": \"Adobe, Inc.\",\n          \"compareAs\": 0,\n          \"caseSensitive\": false,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": true,\n          \"signatureLevel\": 2,\n          \"separator\": \";\"\n        }\n      },\n      \"applicationGroupId\": \"{{APP_GROUP_ID}}\",\n      \"internalApplicationGroupId\": 0,\n      \"includeInMatching\": true,\n      \"softwareDistributorName\": null,\n      \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n      \"childProcess\": false,\n      \"LinuxChildProcess\": 2,\n      \"restrictOpenSaveFileDialog\": false,\n      \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n      \"protectInstalledFiles\": false,\n      \"securityLevel\": \"LOW\"\n    }\n  ],\n  \"PolicyType\": 14,\n  \"Name\": \"3.1 - QuickStart - IT Pre-approved modern applications\",\n  \"Description\": \"Pre-approved modern applications for IT AD group.\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
       "name": "Authenticate",
       "seq": 2,
       "request": {
@@ -199,6 +229,36 @@
           "mode": "none"
         }
       }
+    },
+    {
+      "type": "http",
+      "name": "Get aggregated trust requests",
+      "seq": 8,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/events/aggregations/search",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"filter\": \"eventType IN ElevationRequest\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
     }
   ],
   "activeEnvironmentUid": "",
@@ -207,7 +267,7 @@
       "variables": [
         {
           "name": "EPM_SERVER",
-          "value": "https://<subdomain>.epm.cyberark.com",
+          "value": "https://{{SUBDOMAIN}}.epm.cyberark.com",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -221,21 +281,21 @@
         },
         {
           "name": "VERSION",
-          "value": "25.3.1.4604",
+          "value": "25.6.1.4811",
           "enabled": true,
           "secret": false,
           "type": "text"
         },
         {
           "name": "SET_ID",
-          "value": "",
+          "value": "312f761e-2451-40eb-8768-8f95444060c5",
           "enabled": true,
           "secret": false,
           "type": "text"
         },
         {
           "name": "USERNAME",
-          "value": "john.doe@cyberark.cloud",
+          "value": "",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -248,10 +308,10 @@
           "type": "text"
         },
         {
-          "name": "TOKEN",
+          "name": "POLICY_ID",
           "value": "",
           "enabled": true,
-          "secret": true,
+          "secret": false,
           "type": "text"
         },
         {
@@ -260,9 +320,16 @@
           "enabled": true,
           "secret": true,
           "type": "text"
+        },
+        {
+          "name": "TOKEN",
+          "value": "",
+          "enabled": true,
+          "secret": true,
+          "type": "text"
         }
       ],
-      "name": "CyberArk"
+      "name": "EPM SaaS"
     }
   ],
   "brunoConfig": {
