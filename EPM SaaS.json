@@ -5,7 +5,7 @@
     {
       "type": "http",
       "name": "Add app to app group",
-      "seq": 7,
+      "seq": 8,
       "request": {
         "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/ApplicationGroups/{{APP_GROUP_ID}}",
         "method": "PUT",
@@ -19,7 +19,7 @@
         "params": [],
         "body": {
           "mode": "json",
-          "json": "{\n  \"Applications\": [\n    {\n      \"id\": \"00000000-0000-0000-0000-000000000001\",\n      \"internalId\": 0,\n      \"internalIndex\": 0,\n      \"applicationType\": 3,\n      \"displayName\": \"acrobat.exe\",\n      \"description\": \"\",\n      \"patterns\": {\n        \"FILE_NAME\": {\n          \"@type\": \"FileName\",\n          \"content\": \"acrobat.exe\",\n          \"compareAs\": 0,\n          \"caseSensitive\": true,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": false,\n          \"hashAlgorithm\": \"\",\n          \"hash\": \"\",\n          \"fileSize\": 0\n        },\n        \"ARGUMENTS\": {\n          \"@type\": \"Text\",\n          \"content\": \"\",\n          \"compareAs\": 0,\n          \"caseSensitive\": true,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": true\n        },\n        \"LOCATION\": {\n          \"@type\": \"Location\",\n          \"content\": \"\",\n          \"withSubfolders\": true,\n          \"caseSensitive\": true,\n          \"isEmpty\": true\n        },\n        \"PUBLISHER\": {\n          \"@type\": \"Publisher\",\n          \"content\": \"Adobe, Inc.\",\n          \"compareAs\": 0,\n          \"caseSensitive\": false,\n          \"onlyEmptyValue\": false,\n          \"isEmpty\": true,\n          \"signatureLevel\": 2,\n          \"separator\": \";\"\n        }\n      },\n      \"applicationGroupId\": \"{{APP_GROUP_ID}}\",\n      \"internalApplicationGroupId\": 0,\n      \"includeInMatching\": true,\n      \"softwareDistributorName\": null,\n      \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n      \"childProcess\": false,\n      \"LinuxChildProcess\": 2,\n      \"restrictOpenSaveFileDialog\": false,\n      \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n      \"protectInstalledFiles\": false,\n      \"securityLevel\": \"LOW\"\n    }\n  ],\n  \"PolicyType\": 14,\n  \"Name\": \"3.1 - QuickStart - IT Pre-approved modern applications\",\n  \"Description\": \"Pre-approved modern applications for IT AD group.\"\n}",
+          "json": "{\n    \"Applications\": [\n      {\n        \"id\": \"a573f133-7ec8-4659-b271-979d4dd92c7c\",\n        \"internalId\": 0,\n        \"applicationType\": 3,\n        \"displayName\": \"acrobat.exe\",\n        \"description\": \"\",\n        \"patterns\": {\n          \"FILE_NAME\": {\n            \"@type\": \"FileName\",\n            \"hashAlgorithm\": \"\",\n            \"hash\": \"\",\n            \"hashSHA256\": \"\",\n            \"fileSize\": 0,\n            \"isEmpty\": false,\n            \"content\": \"acrobat.exe\",\n            \"compareAs\": 0,\n            \"caseSensitive\": true\n          },\n          \"ARGUMENTS\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION\": {\n            \"@type\": \"Location\",\n            \"content\": \"\",\n            \"withSubfolders\": true,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION_TYPE\": {\n            \"@type\": \"LocationType\",\n            \"locationType\": \"\",\n            \"isEmpty\": true\n          },\n          \"OWNER\": {\n            \"@type\": \"AdAccounts\",\n            \"accounts\": [],\n            \"isEmpty\": true\n          },\n          \"PUBLISHER\": {\n            \"@type\": \"Publisher\",\n            \"signatureLevel\": 2,\n            \"separator\": \";\",\n            \"caseSensitive\": true,\n            \"compareAs\": 4,\n            \"isEmpty\": false,\n            \"content\": \"Adobe, Inc.\"\n          },\n          \"PRODUCT_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"ProductName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_DESCRIPTION\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"FileDescription\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"COMPANY_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"CompanyName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"ORIGINAL_FILE_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"OriginalFilename\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"PRODUCT_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"FILE_ORIGIN\": {\n            \"@type\": \"FileOrigin\",\n            \"preexisted\": false,\n            \"mainSrcType\": null,\n            \"softwareDistributorName\": null,\n            \"softwareDistributorId\": \"00000000-0000-0000-0000-000000000000\",\n            \"location\": {\n              \"@type\": \"Location\",\n              \"content\": \"\",\n              \"withSubfolders\": true,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"locationType\": {\n              \"@type\": \"LocationType\",\n              \"locationType\": \"\",\n              \"isEmpty\": true\n            },\n            \"userGroupList\": {\n              \"@type\": \"AdAccounts\",\n              \"accounts\": [],\n              \"isEmpty\": true\n            },\n            \"package\": {\n              \"@type\": \"Package\",\n              \"publisher\": {\n                \"@type\": \"Publisher\",\n                \"signatureLevel\": 1,\n                \"separator\": \";\",\n                \"caseSensitive\": false,\n                \"compareAs\": 3,\n                \"isEmpty\": true,\n                \"content\": \"\"\n              },\n              \"isEmpty\": true\n            },\n            \"url\": {\n              \"@type\": \"Text\",\n              \"content\": \"\",\n              \"compareAs\": 0,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"isEmpty\": true\n          },\n          \"PARENT_PROCESS\": {\n            \"@type\": \"ParentProcess\",\n            \"ApplicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n            \"AllAncestors\": false,\n            \"isEmpty\": true\n          },\n          \"SERVICE_NAME\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          }\n        },\n        \"applicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalApplicationGroupId\": 0,\n        \"includeInMatching\": true,\n        \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n        \"childProcess\": false,\n        \"restrictOpenSaveFileDialog\": false,\n        \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n        \"protectInstalledFiles\": false\n      },\n      {\n        \"id\": \"cbebf4a8-baf7-43e4-ad39-cc30c20a09cc\",\n        \"internalId\": 0,\n        \"applicationType\": 3,\n        \"displayName\": \"chrome.exe\",\n        \"description\": \"\",\n        \"patterns\": {\n          \"FILE_NAME\": {\n            \"@type\": \"FileName\",\n            \"hashAlgorithm\": \"\",\n            \"hash\": \"\",\n            \"hashSHA256\": \"\",\n            \"fileSize\": 0,\n            \"isEmpty\": false,\n            \"content\": \"chrome.exe\",\n            \"compareAs\": 0,\n            \"caseSensitive\": true\n          },\n          \"ARGUMENTS\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION\": {\n            \"@type\": \"Location\",\n            \"content\": \"\",\n            \"withSubfolders\": true,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION_TYPE\": {\n            \"@type\": \"LocationType\",\n            \"locationType\": \"\",\n            \"isEmpty\": true\n          },\n          \"OWNER\": {\n            \"@type\": \"AdAccounts\",\n            \"accounts\": [],\n            \"isEmpty\": true\n          },\n          \"PUBLISHER\": {\n            \"@type\": \"Publisher\",\n            \"signatureLevel\": 2,\n            \"separator\": \";\",\n            \"caseSensitive\": false,\n            \"compareAs\": 2,\n            \"isEmpty\": false,\n            \"content\": \"Google\"\n          },\n          \"PRODUCT_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"ProductName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_DESCRIPTION\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"FileDescription\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"COMPANY_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"CompanyName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"ORIGINAL_FILE_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"OriginalFilename\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"PRODUCT_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"FILE_ORIGIN\": {\n            \"@type\": \"FileOrigin\",\n            \"preexisted\": false,\n            \"mainSrcType\": null,\n            \"softwareDistributorName\": null,\n            \"softwareDistributorId\": \"00000000-0000-0000-0000-000000000000\",\n            \"location\": {\n              \"@type\": \"Location\",\n              \"content\": \"\",\n              \"withSubfolders\": true,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"locationType\": {\n              \"@type\": \"LocationType\",\n              \"locationType\": \"\",\n              \"isEmpty\": true\n            },\n            \"userGroupList\": {\n              \"@type\": \"AdAccounts\",\n              \"accounts\": [],\n              \"isEmpty\": true\n            },\n            \"package\": {\n              \"@type\": \"Package\",\n              \"publisher\": {\n                \"@type\": \"Publisher\",\n                \"signatureLevel\": 1,\n                \"separator\": \";\",\n                \"caseSensitive\": false,\n                \"compareAs\": 3,\n                \"isEmpty\": true,\n                \"content\": \"\"\n              },\n              \"isEmpty\": true\n            },\n            \"url\": {\n              \"@type\": \"Text\",\n              \"content\": \"\",\n              \"compareAs\": 0,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"isEmpty\": true\n          },\n          \"PARENT_PROCESS\": {\n            \"@type\": \"ParentProcess\",\n            \"ApplicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n            \"AllAncestors\": false,\n            \"isEmpty\": true\n          },\n          \"SERVICE_NAME\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          }\n        },\n        \"applicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalApplicationGroupId\": 0,\n        \"includeInMatching\": true,\n        \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n        \"childProcess\": false,\n        \"restrictOpenSaveFileDialog\": false,\n        \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n        \"protectInstalledFiles\": false\n      },\n      {\n        \"id\": \"680342bd-cf4f-41a6-ab4b-ed9084c6133a\",\n        \"internalId\": 0,\n        \"applicationType\": 3,\n        \"displayName\": \"chrome.exe\",\n        \"description\": \"\",\n        \"patterns\": {\n          \"FILE_NAME\": {\n            \"@type\": \"FileName\",\n            \"hashAlgorithm\": \"\",\n            \"hash\": \"\",\n            \"hashSHA256\": \"\",\n            \"fileSize\": 0,\n            \"isEmpty\": false,\n            \"content\": \"gotomeeting.exe\",\n            \"compareAs\": 0,\n            \"caseSensitive\": true\n          },\n          \"ARGUMENTS\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION\": {\n            \"@type\": \"Location\",\n            \"content\": \"\",\n            \"withSubfolders\": true,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION_TYPE\": {\n            \"@type\": \"LocationType\",\n            \"locationType\": \"\",\n            \"isEmpty\": true\n          },\n          \"OWNER\": {\n            \"@type\": \"AdAccounts\",\n            \"accounts\": [],\n            \"isEmpty\": true\n          },\n          \"PUBLISHER\": {\n            \"@type\": \"Publisher\",\n            \"signatureLevel\": 2,\n            \"separator\": \";\",\n            \"caseSensitive\": true,\n            \"compareAs\": 0,\n            \"isEmpty\": false,\n            \"content\": \"Logmein, Inc.\"\n          },\n          \"PRODUCT_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"ProductName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_DESCRIPTION\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"FileDescription\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"COMPANY_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"CompanyName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"ORIGINAL_FILE_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"OriginalFilename\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"PRODUCT_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"FILE_ORIGIN\": {\n            \"@type\": \"FileOrigin\",\n            \"preexisted\": false,\n            \"mainSrcType\": null,\n            \"softwareDistributorName\": null,\n            \"softwareDistributorId\": \"00000000-0000-0000-0000-000000000000\",\n            \"location\": {\n              \"@type\": \"Location\",\n              \"content\": \"\",\n              \"withSubfolders\": true,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"locationType\": {\n              \"@type\": \"LocationType\",\n              \"locationType\": \"\",\n              \"isEmpty\": true\n            },\n            \"userGroupList\": {\n              \"@type\": \"AdAccounts\",\n              \"accounts\": [],\n              \"isEmpty\": true\n            },\n            \"package\": {\n              \"@type\": \"Package\",\n              \"publisher\": {\n                \"@type\": \"Publisher\",\n                \"signatureLevel\": 1,\n                \"separator\": \";\",\n                \"caseSensitive\": false,\n                \"compareAs\": 3,\n                \"isEmpty\": true,\n                \"content\": \"\"\n              },\n              \"isEmpty\": true\n            },\n            \"url\": {\n              \"@type\": \"Text\",\n              \"content\": \"\",\n              \"compareAs\": 0,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"isEmpty\": true\n          },\n          \"PARENT_PROCESS\": {\n            \"@type\": \"ParentProcess\",\n            \"ApplicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n            \"AllAncestors\": false,\n            \"isEmpty\": true\n          },\n          \"SERVICE_NAME\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          }\n        },\n        \"applicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalApplicationGroupId\": 0,\n        \"includeInMatching\": true,\n        \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n        \"childProcess\": false,\n        \"restrictOpenSaveFileDialog\": false,\n        \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n        \"protectInstalledFiles\": false\n      },\n      {\n        \"id\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalId\": 0,\n        \"applicationType\": 3,\n        \"displayName\": \"powershell.exe\",\n        \"description\": \"\",\n        \"patterns\": {\n          \"FILE_NAME\": {\n            \"@type\": \"FileName\",\n            \"hashAlgorithm\": \"\",\n            \"hash\": \"\",\n            \"hashSHA256\": \"\",\n            \"fileSize\": 0,\n            \"isEmpty\": false,\n            \"content\": \"powershell.exe\",\n            \"compareAs\": 0,\n            \"caseSensitive\": true\n          },\n          \"ARGUMENTS\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION\": {\n            \"@type\": \"Location\",\n            \"content\": \"\",\n            \"withSubfolders\": true,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION_TYPE\": {\n            \"@type\": \"LocationType\",\n            \"locationType\": \"\",\n            \"isEmpty\": true\n          },\n          \"OWNER\": {\n            \"@type\": \"AdAccounts\",\n            \"accounts\": [],\n            \"isEmpty\": true\n          },\n          \"PUBLISHER\": {\n            \"@type\": \"Publisher\",\n            \"signatureLevel\": 2,\n            \"separator\": \";\",\n            \"caseSensitive\": true,\n            \"compareAs\": 2,\n            \"isEmpty\": false,\n            \"content\": \"Microsoft\"\n          },\n          \"PRODUCT_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"ProductName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_DESCRIPTION\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"FileDescription\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"COMPANY_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"CompanyName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"ORIGINAL_FILE_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"OriginalFilename\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"PRODUCT_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"FILE_ORIGIN\": {\n            \"@type\": \"FileOrigin\",\n            \"preexisted\": false,\n            \"mainSrcType\": null,\n            \"softwareDistributorName\": null,\n            \"softwareDistributorId\": \"00000000-0000-0000-0000-000000000000\",\n            \"location\": {\n              \"@type\": \"Location\",\n              \"content\": \"\",\n              \"withSubfolders\": true,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"locationType\": {\n              \"@type\": \"LocationType\",\n              \"locationType\": \"\",\n              \"isEmpty\": true\n            },\n            \"userGroupList\": {\n              \"@type\": \"AdAccounts\",\n              \"accounts\": [],\n              \"isEmpty\": true\n            },\n            \"package\": {\n              \"@type\": \"Package\",\n              \"publisher\": {\n                \"@type\": \"Publisher\",\n                \"signatureLevel\": 1,\n                \"separator\": \";\",\n                \"caseSensitive\": false,\n                \"compareAs\": 3,\n                \"isEmpty\": true,\n                \"content\": \"\"\n              },\n              \"isEmpty\": true\n            },\n            \"url\": {\n              \"@type\": \"Text\",\n              \"content\": \"\",\n              \"compareAs\": 0,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"isEmpty\": true\n          },\n          \"PARENT_PROCESS\": {\n            \"@type\": \"ParentProcess\",\n            \"ApplicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n            \"AllAncestors\": false,\n            \"isEmpty\": true\n          },\n          \"SERVICE_NAME\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          }\n        },\n        \"applicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalApplicationGroupId\": 0,\n        \"includeInMatching\": true,\n        \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n        \"childProcess\": false,\n        \"restrictOpenSaveFileDialog\": false,\n        \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n        \"protectInstalledFiles\": false\n      },\n      {\n        \"id\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalId\": 0,\n        \"applicationType\": 3,\n        \"displayName\": \"eventsmgr.exe\",\n        \"description\": \"\",\n        \"patterns\": {\n          \"FILE_NAME\": {\n            \"@type\": \"FileName\",\n            \"hashAlgorithm\": \"\",\n            \"hash\": \"\",\n            \"hashSHA256\": \"\",\n            \"fileSize\": 0,\n            \"isEmpty\": false,\n            \"content\": \"mmc.exe\",\n            \"compareAs\": 0,\n            \"caseSensitive\": true\n          },\n          \"ARGUMENTS\": {\n            \"@type\": \"Text\",\n            \"content\": \"eventvwr.msc\",\n            \"compareAs\": 2,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION\": {\n            \"@type\": \"Location\",\n            \"content\": \"\",\n            \"withSubfolders\": true,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION_TYPE\": {\n            \"@type\": \"LocationType\",\n            \"locationType\": \"\",\n            \"isEmpty\": true\n          },\n          \"OWNER\": {\n            \"@type\": \"AdAccounts\",\n            \"accounts\": [],\n            \"isEmpty\": true\n          },\n          \"PUBLISHER\": {\n            \"@type\": \"Publisher\",\n            \"signatureLevel\": 2,\n            \"separator\": \";\",\n            \"caseSensitive\": true,\n            \"compareAs\": 2,\n            \"isEmpty\": false,\n            \"content\": \"Microsoft\"\n          },\n          \"PRODUCT_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"ProductName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_DESCRIPTION\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"FileDescription\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"COMPANY_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"CompanyName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"ORIGINAL_FILE_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"OriginalFilename\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"PRODUCT_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"FILE_ORIGIN\": {\n            \"@type\": \"FileOrigin\",\n            \"preexisted\": false,\n            \"mainSrcType\": null,\n            \"softwareDistributorName\": null,\n            \"softwareDistributorId\": \"00000000-0000-0000-0000-000000000000\",\n            \"location\": {\n              \"@type\": \"Location\",\n              \"content\": \"\",\n              \"withSubfolders\": true,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"locationType\": {\n              \"@type\": \"LocationType\",\n              \"locationType\": \"\",\n              \"isEmpty\": true\n            },\n            \"userGroupList\": {\n              \"@type\": \"AdAccounts\",\n              \"accounts\": [],\n              \"isEmpty\": true\n            },\n            \"package\": {\n              \"@type\": \"Package\",\n              \"publisher\": {\n                \"@type\": \"Publisher\",\n                \"signatureLevel\": 1,\n                \"separator\": \";\",\n                \"caseSensitive\": false,\n                \"compareAs\": 3,\n                \"isEmpty\": true,\n                \"content\": \"\"\n              },\n              \"isEmpty\": true\n            },\n            \"url\": {\n              \"@type\": \"Text\",\n              \"content\": \"\",\n              \"compareAs\": 0,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"isEmpty\": true\n          },\n          \"PARENT_PROCESS\": {\n            \"@type\": \"ParentProcess\",\n            \"ApplicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n            \"AllAncestors\": false,\n            \"isEmpty\": true\n          },\n          \"SERVICE_NAME\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          }\n        },\n        \"applicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalApplicationGroupId\": 0,\n        \"includeInMatching\": true,\n        \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n        \"childProcess\": false,\n        \"restrictOpenSaveFileDialog\": false,\n        \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n        \"protectInstalledFiles\": false\n      }\n    ],\n  \"PolicyType\": 14,\n  \"Name\": \"3.1 - QuickStart - IT Pre-approved modern applications\",\n  \"Description\": \"Pre-approved modern applications for IT AD group.\"\n}",
           "formUrlEncoded": [],
           "multipartForm": []
         },
@@ -34,7 +34,7 @@
     },
     {
       "type": "http",
-      "name": "Authenticate",
+      "name": "Authenticate (SAML)",
       "seq": 2,
       "request": {
         "url": "{{EPM_LOGIN}}/EPM/API/{{VERSION}}/Auth/EPM/Logon",
@@ -58,7 +58,61 @@
     },
     {
       "type": "http",
+      "name": "Authenticate",
+      "seq": 1,
+      "request": {
+        "url": "{{EPM_LOGIN}}/EPM/API/{{VERSION}}/Auth/EPM/Logon",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"Username\": \"{{USERNAME}}\",\n  \"Password\": \"{{PASSWORD}}\",\n  \"ApplicationID\": \"bruno\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
       "name": "Get aggregated elevation requests",
+      "seq": 4,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/events/aggregations/search",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"filter\": \"eventType IN Launch\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get aggregated trust requests",
       "seq": 5,
       "request": {
         "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/events/aggregations/search",
@@ -74,6 +128,36 @@
         "body": {
           "mode": "json",
           "json": "{\n  \"filter\": \"eventType IN ElevationRequest\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get app group details",
+      "seq": 7,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/ApplicationGroups/",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n\"filter\": \"\"\n}",
           "formUrlEncoded": [],
           "multipartForm": []
         },
@@ -143,7 +227,7 @@
     {
       "type": "http",
       "name": "Get policies",
-      "seq": 4,
+      "seq": 11,
       "request": {
         "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/Server/Search?limit=100&offset=0&sortBy=PolicyName&sortDir=desc",
         "method": "POST",
@@ -232,8 +316,8 @@
     },
     {
       "type": "http",
-      "name": "Get aggregated trust requests",
-      "seq": 8,
+      "name": "Get agent configurations",
+      "seq": 9,
       "request": {
         "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/events/aggregations/search",
         "method": "POST",
@@ -259,6 +343,118 @@
           "mode": "none"
         }
       }
+    },
+    {
+      "type": "http",
+      "name": "Get agent configuration details",
+      "seq": 10,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/AgentConfiguration/{{AGENT_CONFIG_ID}}",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          },
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [
+            {
+              "name": "",
+              "value": "",
+              "enabled": true
+            }
+          ],
+          "multipartForm": [
+            {
+              "type": "text",
+              "name": "Content-Type",
+              "value": "application/json",
+              "enabled": true
+            }
+          ]
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get policy details",
+      "seq": 13,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/Server/{{POLICY_ID}}",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": "{\n\"filter\": \"\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Create policy",
+      "seq": 13,
+      "request": {
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/Server",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          },
+          {
+            "name": "Authorization",
+            "value": "basic {{TOKEN}}",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"Policy\": {},\n  \"PolicyType\": 11,\n  \"Name\": \"3.0 - QuickStart - BizDev - Pre-approved applications\",\n  \"Applications\": [\n          {\n        \"id\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalId\": 0,\n        \"applicationType\": 3,\n        \"displayName\": \"acrobat.exe\",\n        \"description\": \"\",\n        \"patterns\": {\n          \"FILE_NAME\": {\n            \"@type\": \"FileName\",\n            \"hashAlgorithm\": \"\",\n            \"hash\": \"\",\n            \"hashSHA256\": \"\",\n            \"fileSize\": 0,\n            \"isEmpty\": false,\n            \"content\": \"acrobat.exe\",\n            \"compareAs\": 0,\n            \"caseSensitive\": true\n          },\n          \"ARGUMENTS\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION\": {\n            \"@type\": \"Location\",\n            \"content\": \"\",\n            \"withSubfolders\": true,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          },\n          \"LOCATION_TYPE\": {\n            \"@type\": \"LocationType\",\n            \"locationType\": \"\",\n            \"isEmpty\": true\n          },\n          \"OWNER\": {\n            \"@type\": \"AdAccounts\",\n            \"accounts\": [],\n            \"isEmpty\": true\n          },\n          \"PUBLISHER\": {\n            \"@type\": \"Publisher\",\n            \"signatureLevel\": 2,\n            \"separator\": \";\",\n            \"caseSensitive\": true,\n            \"compareAs\": 4,\n            \"isEmpty\": false,\n            \"content\": \"Adobe, Inc.\"\n          },\n          \"PRODUCT_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"ProductName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_DESCRIPTION\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"FileDescription\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"COMPANY_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"CompanyName\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"ORIGINAL_FILE_NAME\": {\n            \"@type\": \"FileInfo\",\n            \"elementName\": \"FileVerInfo\",\n            \"attributeInfoName\": \"OriginalFilename\",\n            \"isEmpty\": true,\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false\n          },\n          \"FILE_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"PRODUCT_VERSION\": {\n            \"@type\": \"VersionRange\",\n            \"minVersion\": \"\",\n            \"maxVersion\": \"\",\n            \"isEmpty\": true\n          },\n          \"FILE_ORIGIN\": {\n            \"@type\": \"FileOrigin\",\n            \"preexisted\": false,\n            \"mainSrcType\": null,\n            \"softwareDistributorName\": null,\n            \"softwareDistributorId\": \"00000000-0000-0000-0000-000000000000\",\n            \"location\": {\n              \"@type\": \"Location\",\n              \"content\": \"\",\n              \"withSubfolders\": true,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"locationType\": {\n              \"@type\": \"LocationType\",\n              \"locationType\": \"\",\n              \"isEmpty\": true\n            },\n            \"userGroupList\": {\n              \"@type\": \"AdAccounts\",\n              \"accounts\": [],\n              \"isEmpty\": true\n            },\n            \"package\": {\n              \"@type\": \"Package\",\n              \"publisher\": {\n                \"@type\": \"Publisher\",\n                \"signatureLevel\": 1,\n                \"separator\": \";\",\n                \"caseSensitive\": false,\n                \"compareAs\": 3,\n                \"isEmpty\": true,\n                \"content\": \"\"\n              },\n              \"isEmpty\": true\n            },\n            \"url\": {\n              \"@type\": \"Text\",\n              \"content\": \"\",\n              \"compareAs\": 0,\n              \"caseSensitive\": false,\n              \"isEmpty\": true\n            },\n            \"isEmpty\": true\n          },\n          \"PARENT_PROCESS\": {\n            \"@type\": \"ParentProcess\",\n            \"ApplicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n            \"AllAncestors\": false,\n            \"isEmpty\": true\n          },\n          \"SERVICE_NAME\": {\n            \"@type\": \"Text\",\n            \"content\": \"\",\n            \"compareAs\": 0,\n            \"caseSensitive\": false,\n            \"isEmpty\": true\n          }\n        },\n        \"applicationGroupId\": \"00000000-0000-0000-0000-000000000000\",\n        \"internalApplicationGroupId\": 0,\n        \"includeInMatching\": true,\n        \"accountId\": \"00000000-0000-0000-0000-000000000000\",\n        \"childProcess\": false,\n        \"restrictOpenSaveFileDialog\": false,\n        \"securityTokenId\": \"00000000-0000-0000-0000-000000000000\",\n        \"protectInstalledFiles\": false\n      }\n  ],\n  \"Action\": 3\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
     }
   ],
   "environments": [
@@ -266,7 +462,7 @@
       "variables": [
         {
           "name": "EPM_SERVER",
-          "value": "",
+          "value": "https://na123.epm.cyberark.com",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -280,7 +476,7 @@
         },
         {
           "name": "VERSION",
-          "value": "25.6.1.4811",
+          "value": "25.8.0.4913",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -294,7 +490,7 @@
         },
         {
           "name": "USERNAME",
-          "value": "",
+          "value": "john.doe@acme-corp.com",
           "enabled": true,
           "secret": false,
           "type": "text"
@@ -314,14 +510,21 @@
           "type": "text"
         },
         {
-          "name": "PASSWORD",
+          "name": "AGENT_CONFIG_ID",
+          "value": "",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "TOKEN",
           "value": "",
           "enabled": true,
           "secret": true,
           "type": "text"
         },
         {
-          "name": "TOKEN",
+          "name": "PASSWORD",
           "value": "",
           "enabled": true,
           "secret": true,
