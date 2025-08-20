@@ -145,7 +145,7 @@
       "name": "Get app group details",
       "seq": 7,
       "request": {
-        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/ApplicationGroups/",
+        "url": "{{EPM_SERVER}}/EPM/API/{{VERSION}}/Sets/{{SET_ID}}/Policies/ApplicationGroups/{{APP_GROUP_ID}}",
         "method": "GET",
         "headers": [
           {
